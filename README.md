@@ -2,7 +2,7 @@
 A semantic HTML5 profile and mini-portifolio built for the Web technologies(CIS2103) Practical assignment
 ## Part C - AI prompt log
 ### 1. Exact Prompt
->"Act as a web developer portifolio copywriter.Write a concise, 3 setence 'About me' bio for Nyashadzashe Chivaviro, a second-year Computer Information Systems interested in web development and AI."
+>"Act as a web developer portifolio copywriter.Write a concise, 3 sentence 'About me' bio for Nyashadzashe Chivaviro, a second-year Computer Information Systems interested in web development and AI."
 ### 2. AI Raw Output
 > "Nyashadzashe Chivaviro is a dedicated Computer Information Systems student with a passion for building dynamic web applications.Driven by motivation, Nyasha explores the intersection of AI and web technologies to create seamless digital experiences. Always eager to learn, Nyasha is building a strong foundation in modern software development."
 ### 3. Final Edited Version 
