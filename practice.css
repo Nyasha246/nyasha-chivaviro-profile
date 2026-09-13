@@ -1,0 +1,18 @@
+h1 {
+    color: aquamarine;
+}
+p {
+    color: blue;
+}
+
+
+
+#home {
+    background-color: lightgreen;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#contact form {
+    width: 300px;
+}
