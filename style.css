@@ -12,9 +12,11 @@ body {
     line-height: 1.6;
     color: #333;
     padding: 16px;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
+
 
 main section, main article {
     margin-bottom: 24px;
@@ -53,25 +55,67 @@ main section, main article {
     gap: 20px;
 }
 
+
 /* =========================================
-   Part D: Mobile-First Responsive Design & Media Query
+   Part D: Mobile-First Responsive Design
    ========================================= */
-/* Tablet & Up Breakpoint (min-width: 768px) */
+/* Mobile-first base styles */
+body {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+}
+header img {
+    max-width: 100%;
+    height: auto;
+}
+main section,
+main article {
+    width: 100%;
+}
+/* Tablet: 768px and above */
 @media (min-width: 768px) {
     body {
         padding: 32px;
     }
-
+    /* Create a two-column layout on tablets */
     main {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 24px;
     }
+    /* These sections take the full width */
+    #about,
+    #projects,
+    #contact {
+        grid-column: 1 / -1;
+    }
+    /* Make the project area more spacious */
+    #projects {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    /* Improve skills spacing on larger screens */
+    #skills ul {
+        justify-content: center;
+    }
 }
-
-/* Desktop Breakpoint (min-width: 1280px) */
+/* Desktop: 1280px and above */
 @media (min-width: 1280px) {
     body {
         padding: 48px;
+    }
+    /* Three-column project layout */
+    #projects {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    /* Give sections more comfortable spacing */
+    main section,
+    main article {
+        padding: 24px;
+    }
+    /* Make the contact form wider on desktop */
+    #contact form {
+        max-width: 600px;
     }
 }
