@@ -1,0 +1,77 @@
+/* =========================================
+   Part A: CSS3 Fundamentals & Box Model
+   ========================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main section, main article {
+    margin-bottom: 24px;
+    padding: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+/* =========================================
+   Part B: Flexbox Layout (Skills Section)
+   ========================================= */
+#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+#skills li {
+    background-color: #3b82f6;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* =========================================
+   Part C: CSS Grid Layout (Projects Section)
+   ========================================= */
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* =========================================
+   Part D: Mobile-First Responsive Design & Media Query
+   ========================================= */
+/* Tablet & Up Breakpoint (min-width: 768px) */
+@media (min-width: 768px) {
+    body {
+        padding: 32px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+/* Desktop Breakpoint (min-width: 1280px) */
+@media (min-width: 1280px) {
+    body {
+        padding: 48px;
+    }
+}
