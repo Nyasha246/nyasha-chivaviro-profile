@@ -14,3 +14,17 @@ I adjusted the AI output from third-person to first person ("I am") to make it f
 * **Form labels and Inputs:** Explicitly associated every form '<label> with its corresponding '<input> using matching 'for' and 'id' attributes.
 * **Peer Review Feedback:** During Thursdays peer review, it was noted that button text colour contrast needed improvement.
 * **Fix Applied:** Updated the submit button styles to ensure high contrast against the background for better readability.
+## Part F - Responsive Notes & Testing
+
+### Breakpoints Tested
+* **Mobile (375px):** Verified clean layout without horizontal scrolling in DevTools.
+* **Tablet (768px):** Navigation and forms adjust gracefully for medium screens.
+* **Desktop (1280px):** Page content centers neatly with a maximum container width.
+
+### Flexbox & Grid Implementation
+* **Flexbox:** Used in the `#skills` list (`display: flex`, `flex-wrap: wrap`, `gap: 12px`) to render skill tags inline cleanly.
+* **CSS Grid:** Used in `#projects` (`grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))`) to dynamically scale project card columns using `fr` units.
+
+### Tailwind Utility & Custom CSS Split
+* **Tailwind Sections:** Applied to `<header>` and `<form>` (`#contact`) for fast responsive layout tweaks and hover states.
+* **Custom CSS:** Written in `style.css` for global box model defaults, custom Flexbox lists, CSS Grid layouts, and custom `@media` queries.
